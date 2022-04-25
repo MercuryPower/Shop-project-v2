@@ -1,0 +1,155 @@
+html{
+    font-size: 24px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0d7a36;
+    background: #111;
+    min-width: 320px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+section{
+    padding:50px 0;
+}
+a{
+    color:#0d7a36;
+}
+a:hover{
+    transition: all .3s;
+    color:#fff;
+}
+.catalog{
+    transition: all 3s;
+    max-height: auto;
+}
+.catalog li{
+    max-height: auto;
+    overflow:hidden;
+}
+/* Header */
+.navbar-dark .navbar-nav .nav-link {
+    color: #0d7a36;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* .navbar-nav .dropdown-menu{
+    right: 0;
+    left:auto;
+} */
+.dropdown-men,
+.user{
+    right:0;
+    left:auto;
+}
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width:100%;
+    background-color: #0d7a36;
+    height: 1px;
+    transition: all 0.3s;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    transform: scale(1)
+}
+.modal-body img{
+    max-width: 200px;
+}
+
+/* Header */
+
+/* Carousel */
+.my-carousel{
+    padding: 0;
+}
+.my-carousel .carousel-item img{
+    object-fit: cover;
+}
+/* Carousel */
+
+/* Product-Card */
+.product-card{
+    box-shadow: 0 0 6px 2px #0d7a36;
+    transition: all .3s;
+    margin-top: 20px;
+}
+.product-card:hover{
+    box-shadow: 0 0 10px 10px #0d7a36;
+}
+.product-thumb a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 20px;
+}
+.product-thumb img{
+    max-height: 150%;
+}
+.product-details{
+    padding: 20px;
+}
+.product-details h4 a{
+    font-weight: 500;
+    display: block;
+    height: 4em;
+    overflow: hidden;
+    text-decoration: none;
+}
+.product-details p{
+    margin-bottom: 18px;
+    height: 44px;
+    overflow: hidden;
+}
+.product-botton-details{
+    overflow: hidden;
+    border-top: 1px solid #0d7a36;
+    padding-top: 20px;
+}
+.product-price{
+    font-size: 28px;
+    color:white;
+    font-weight: 600;
+}
+.product-price small{
+    color:#555;
+    font-weight: 300;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+.product-links a{
+    font-size:30px;
+    margin-left: 10px;
+}
+/* Product-card */
+
+/* Footer */
+.footer{
+    background-color: #122;
+}
+.footer h4{
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 1px solid #666;
+    padding-bottom:3px;
+}
+.footer img{
+    max-width: 50%;
+    max-height: auto;
+}
+.footer a{
+    text-decoration: none;
+    transition: all .3s;
+}
+.footer a:hover{
+    color: #fff;
+}
+.footer li a{
+    display: block;
+}
