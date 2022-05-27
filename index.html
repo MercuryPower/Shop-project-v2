@@ -153,9 +153,9 @@
                                   <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body ">
+                                <div class="modal-body bg-black text-light">
                                     <table class="table">
-                                        <tbody>
+                                        <tbody class="cart-table text-light">
                                           <tr>
                                             <td></td>
                                             <td>Наименование товара</td>
@@ -167,40 +167,40 @@
                                             <td><a href="#">Видеокарта Palit NVIDIA GeForce RTX 3060, PA-RTX3060 DUAL 12G, 12ГБ, GDDR6, LHR, Ret [ne63060019k9-190ad]</a></td>
                                             <td>77990<i class="fa-solid fa-ruble-sign"></i></td>
                                             <td>1</td>
-                                            <td><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
+                                            <td class="delete"><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
                                           </tr>
                                           <tr>
                                             <td><img src="images/GPU/gpu2.jpg" alt=""></td>
-                                            <td><a href="#"> Видеокарта GIGABYTE GeForce GTX 1650 D6 WINDFORCE OC (rev. 2.0) [GV-N1656WF2OC-4GD Rev2.0]</a></td>
+                                            <td><a href="#" > Видеокарта GIGABYTE GeForce GTX 1650 D6 WINDFORCE OC (rev. 2.0) [GV-N1656WF2OC-4GD Rev2.0]</a></td>
                                             <td>29900<i class="fa-solid fa-ruble-sign"></i></td>
                                             <td>1</td>
-                                            <td><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
+                                            <td class="delete"><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
                                           </tr>
                                           <tr>
                                             <td><img src="images/GPU/gpuAMD.png" alt=""></td>
                                             <td><a href="#">Видеокарта Radeon RX 570 GAMING X 4G</a></td>
                                             <td>43990<i class="fa-solid fa-ruble-sign"></i></td>
                                             <td>1</td>
-                                            <td><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
+                                            <td class="delete"><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
                                           </tr>
                                           <tr>
                                             <td><img src="images/CPU/cpuIntel.jpg" alt=""></td>
                                             <td><a href="#">Процессор Intel Core i5-11400F BOX</a></td>
                                             <td>20300<i class="fa-solid fa-ruble-sign"></i></td>
                                             <td>1</td>
-                                            <td><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
+                                            <td class="delete"><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
                                           </tr>
                                           <tr>
                                             <td><img src="images/CPU/cpuAMD.jpg" alt=""></td>
                                             <td><a href="#">Процессор AMD Ryzen 5 3600 OEM</a></td>
                                             <td>19990<i class="fa-solid fa-ruble-sign"></i></td>
                                             <td>1</td>
-                                            <td><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
+                                            <td class="delete"><a href="#">Удалить<i class="fa-solid fa-x text-danger"></i></a></td>
                                           </tr>
                                         </tbody>
                                       </table>
                                 </div>
-                                <div class="modal-footer">
+                                <div class="modal-footer text-light bg-dark">
                                   <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Продолжить покупки</button>
                                   <button type="button" class="btn btn-success ">Перейти к оформлению заказа</button>
                                 </div>
@@ -208,10 +208,22 @@
                             </div>
                           </div>
                     </li>
-                    <li class="nav-ite">
-                        <a class="nav-link" href="#">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                    <li class="nav-ite dropstart">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                            <i class="fa-solid fa-magnifying-glass">
+                            </i>
                         </a>
+                        <ul class="dropdown-menu dropdown ul dropdown-menu-sm-start bg-transparent" aria-labelledby="navbarDropdown">
+                          <input type="text" class="form-control search  dropdown-item bg-light" data-bs-toggle="modal" data-bs-target="#search">
+                          <li class="text-light dropdown-item bg-dark hide"><a href="#PrCard1" class="text-decoration-none">видеокарта</a></li>
+                          <li class="text-light dropdown-item bg-dark"><a href="#PrCard2" class="text-decoration-none">процессор</a></li>
+                          <li class="text-light dropdown-item bg-dark"><a href="#PrCard3" class="text-decoration-none">оперативная память</a></li>
+                          <li class="text-light dropdown-item bg-dark"><a href="#PrCard3" class="text-decoration-none">ОЗУ</a></li>
+                          <li class="text-light dropdown-item bg-dark"><a href="#PrCard4" class="text-decoration-none">блок питания</a></li>
+                          <li class="text-light dropdown-item bg-dark"><a href="#PrCard4" class="text-decoration-none">Блок Питания</a></li>
+                          <li class="text-light dropdown-item bg-dark"><a href="#PrCard6" class="text-decoration-none">СВО</a></li>
+                          <li class="text-light dropdown-item bg-dark"><a href="#PrCard7" class="text-decoration-none">Материнская плата</a></li>
+                        </ul>
                     </li>
                     </ul>
             </div>
@@ -268,7 +280,7 @@
                     51 990<i class="fa-solid fa-ruble-sign"></i>
                     </div>
                       <div class="product-links">
-                      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                      <a href="" class="buy"><i class="fa-solid fa-cart-shopping"></i></a>
                       <a href=""><i class="fa-solid fa-heart"></i></a>
                       </div>
                   </div>
@@ -706,7 +718,7 @@
                             </div>
                             <div class="product-botton-details d-flex justify-content-between">
                                 <div class="product-price ms-2">
-                                8 799<i class="fa-solid fa-ruble-sign"></i>
+                                <span class="price">8 799</span><i class="fa-solid fa-ruble-sign"></i>
                                 </div>
                                   <div class="product-links">
                                   <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
@@ -1013,10 +1025,10 @@
                 <div class="col-lg-4 col-sm-6">
                   <div class="product-card">
                     <div class="product-thumb">
-                      <a href=""><img src="images/MotherBoard/MBCard1.png" alt=""></a>
+                      <a href=""><img src="images/Corpus/01.png" alt=""></a>
                     </div>
                     <div class="product-details text-light">
-                      <h4><a href="">Материнская плата GIGABYTE H410M H V3</a></h4>
+                      <h4><a href="">Корпус DEEPCOOL MATREXX 55 MESH ADD-RGB 4F [DP-ATX-MATREXX55-MESH-AR-4F] черный</a></h4>
                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ab nulla reiciendis odio non facere voluptate odit reprehenderit nisi consequuntur aut, soluta perferendis sit ipsam, sapiente voluptas itaque est saepe.</p>
                     </div>
                     <div class="product-botton-details d-flex justify-content-between">
@@ -1187,5 +1199,6 @@
         </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+    <script src="script.js"></script>
+    </body>
 </html>

@@ -153,3 +153,7 @@ a:hover{
 .footer li a{
     display: block;
 }
+.hide
+{
+    display: none;
+}

@@ -204,18 +204,173 @@
                         </div>
                       </div>
                 </li>
-                <li class="nav-ite">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                <li class="nav-ite dropstart">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        </i>
                     </a>
+                    <ul class="dropdown-menu dropdown ul dropdown-menu-sm-start bg-transparent" aria-labelledby="navbarDropdown">
+                      <input type="text" class="form-control search  dropdown-item bg-light" data-bs-toggle="modal" data-bs-target="#search">
+                      <li class="text-light dropdown-item bg-dark hide"><a href="#PrCard1" class="text-decoration-none">видеокарта</a></li>
+                      <li class="text-light dropdown-item bg-dark"><a href="#PrCard2" class="text-decoration-none">процессор</a></li>
+                      <li class="text-light dropdown-item bg-dark"><a href="#PrCard3" class="text-decoration-none">оперативная память</a></li>
+                      <li class="text-light dropdown-item bg-dark"><a href="#PrCard3" class="text-decoration-none">ОЗУ</a></li>
+                      <li class="text-light dropdown-item bg-dark"><a href="#PrCard4" class="text-decoration-none">блок питания</a></li>
+                      <li class="text-light dropdown-item bg-dark"><a href="#PrCard4" class="text-decoration-none">Блок Питания</a></li>
+                      <li class="text-light dropdown-item bg-dark"><a href="#PrCard6" class="text-decoration-none">СВО</a></li>
+                      <li class="text-light dropdown-item bg-dark"><a href="#PrCard7" class="text-decoration-none">Материнская плата</a></li>
+                    </ul>
                 </li>
                 </ul>
         </div>
         </div>
     </nav>
-    <div class="text-center fs-2 mb-2 "><span class="fw-bolder">Конфигуратор </span></div>
+    <section class="mb-5">
+    <div class="text-center fs-2 mb-2 "><span class="fw-bolder">Конфигуратор PCHeaven</span></div>
         <div class="text-md-center fs-6"> Конфигуратор системного блока PCHeaven поможет подобрать комплектацию ПК и проверить комплектующие на совместимость. Выбирайте, сравнивайте характеристики, заказывайте дополнительные опции для создания конфигурации своей мечты!</div>
     </div>
+    <div class="configurator d-flex justify-content-evenly mt-5 align-items-center">
+      <div class="firstColumn">
+        <span class="bg-dark fs-4 rounded">Видеокарта</span>
+      <div class="videocardConfig mt-1">
+        <select class="form-select-sm mb-3 w-auto w-75" name="" id="">
+          <option selected disabled>Выберите одну из представленных</option>
+          <option value="1">Palit GeForce GTX 1660 SUPER</option>
+          <option value="2">MSI GeForce RTX 2060 GAMING Z</option>
+          <option value="3">GIGABYTE GeForce RTX 3090 TI</option>
+        </select>
+      </div>
+      <span class="bg-dark fs-4 rounded">Процессор</span>
+      <div class="CPUConfig mt-1 ">
+        <select class="form-select-sm mb-3" name="" id="">
+          <option selected disabled>Выберите одну из представленных</option>
+          <option value="1">Intel Core i5-11400F</option>
+          <option value="2">Intel Core i5-10400F</option>
+          <option value="3">AMD Ryzen 5 5600X</option>
+        </select>
+      </div>
+      <span class="bg-dark fs-4 rounded">Материнская плата</span>
+      <div class="mohterboardConfig mt-2 ">
+        <select class="form-select-sm mb-3" name="" id="">
+          <option selected disabled>Выберите одну из представленных</option>
+          <option value="1">GIGABYTE B550 AORUS ELITE V2</option>
+          <option value="2">MSI MAG B550 TOMAHAWK</option>
+          <option value="3">ASUS TUF GAMING Z590-PLUS WIFI</option>
+        </select>
+      </div>
+      <span class="bg-dark fs-4 rounded">Корпус</span>
+      <div class="mohterboardConfig mt-2 ">
+        <select class="form-select-sm mb-3" name="" id="">
+          <option selected disabled>Выберите одну из представленных</option>
+          <option value="1">DEEPCOOL MATREXX 55 MESH</option>
+          <option value="2">Cougar MX330-F</option>
+          <option value="3">ZET GAMING Rare M2 ARGB </option>
+        </select>
+      </div>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="15000">
+          <img src="images/Corpus/123.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/Corpus/pngegg.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Corpus/pngegg (2).png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+      <div class="secondColumn">
+        <span class="bg-dark fs-4 rounded">Охлаждение CPU</span>
+      <div class="videocardConfig mt-2 ">
+        <select class="form-select-sm mb-2" name="" id="">
+          <option selected disabled>Выберите одну из представленных</option>
+          <option value="1">be quiet! DARK ROCK PRO 4</option>
+          <option value="2">DEEPCOOL GAMMAXX 400 EX</option>
+          <option value="3">DEEPCOOL AK620</option>
+        </select>
+      </div>
+      <span class="bg-dark fs-4 rounded">Оперативная память</span>
+      <div class="videocardConfig mt-2 ">
+        <select class="form-select-sm mb-2" name="" id="">
+          <option selected disabled>Выберите одну из представленных</option>
+          <option value="1">Kingston FURY Beast Black</option>
+          <option value="2">AMD Radeon R9 Gamer Series</option>
+          <option value="3">A-Data XPG Lancer RGB</option>
+        </select>
+      </div>
+      <span class="bg-dark fs-4 rounded">Блок питания</span>
+      <div class="videocardConfig mt-2 ">
+        <select class="form-select-sm mb-2" name="" id="">
+          <option selected disabled>Выберите одну из представленных</option>
+          <option value="1">Corsair HX1200</option>
+          <option value="2">Cougar VTE600 </option>
+          <option value="3">DEEPCOOL DQ750</option>
+        </select>
+      </div>
+      <span class="bg-dark fs-4 rounded">Хранение Данных</span>
+      <div class="mohterboardConfig mt-2 ">
+        <select class="form-select-sm mb-3"  name="" id="">
+          <option selected disabled>Выберите одну из представленных</option>
+          <option value="1">Western Digital Blue 1 ТБ</option>
+          <option value="2">Seagate BarraCuda 2 ТБ</option>
+          <option value="3">Samsung 870 EVO 500 ГБ</option>
+        </select>
+      </div>
+    </div>
+    </div>
+</section>
+    <footer>
+      <section id="footer" class="footer border-top border-3 border-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-6">
+              <h4 class="opacity-75 text-light rounded text-center">Компания</h4>
+              <!-- <img class=""src="logo3.png" alt=""> -->
+              <ul class="list-unstyled">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Правила продаж</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-6">
+              <h4 class="opacity-75  text-light rounded text-center">Покупателю</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Как оформить заказ</a></li>
+                <li><a href="#">Способы оплаты</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Статус заказа</a></li>
+                <li><a href="#">Гарантия</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-6">
+              <h4 class="opacity-75 text-light rounded text-center">Контакты</h4>
+              <ul class="list-unstyled">
+                <li>Мы в сети</li>
+                <div class="social-icons d-flex">
+                <li><a href="#"><i class="fa-brands fa-vk fs-4"></i></a></li>
+                  <li>  <a href="#"><i class="fa-brands fa-youtube fs-4 ms-2"></i></a></li>
+                    <li> <a href="#"><i class="fa-brands fa-twitch fs-4 ms-2"></i></a> </li>
+                      <li><a href="#"><i class="fa-brands fa-telegram fs-4 ms-2"></i></a></li>
+              </div>
+                <li><a href="#">О магазине</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="fw-bolder fs-6" >8-823-77-07-999<br>(с 09:00 до 23:00)</li>
+              </ul>
+            </div>
+            <div class="fs-7 text-center opacity-75 mt-3"><small>© 2022 Компания PCHeaven. Администрация Сайта не несет ответственности за размещаемые Пользователями материалы (в т.ч. информацию и изображения), их содержание и качество.</small></div>
+          </div>
+        </div>
+        <!-- <div class="fs-7 text-center opacity-75"><small>© 2022 Компания PCHeaven. Администрация Сайта не несет ответственности за размещаемые Пользователями материалы (в т.ч. информацию и изображения), их содержание и качество.</small></div> -->
+        <!-- © 2022 Компания PCHeaven. Администрация Сайта не несет ответственности за размещаемые Пользователями материалы (в т.ч. информацию и изображения), их содержание и качество. -->
+      </section>
+      
+
+    </footer>
 
 </body>
 
